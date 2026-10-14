@@ -43,12 +43,7 @@
     get lang() { return language; },
     t(english, chinese, params = {}) { return interpolate(language === 'zh' ? chinese : english, params); },
     summary(paper) { return language === 'zh' ? window.PAPER_ZH?.[paper.id]?.summary || paper.summary || '' : paper.summary || ''; },
-    citation(paper) {
-      if (language === 'zh' && paper.type === 'preprint') {
-        return `已投稿 IEEE，审稿中，${paper.year}。arXiv:${paper.arxiv.split('/abs/')[1]}。`;
-      }
-      return paper.citation;
-    },
+    citation(paper) { return paper.citation; },
     onChange(callback) {
       window.addEventListener('site:languagechange', callback);
       return () => window.removeEventListener('site:languagechange', callback);

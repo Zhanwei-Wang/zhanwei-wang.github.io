@@ -1,4 +1,4 @@
-/* Publication details from the supplied CV; source links verified October 2026. */
+/* Publication details from the supplied CV and verified paper sources. */
 window.PUBLICATIONS = [
   {
     "id": "j1",
@@ -12,8 +12,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1109/TWC.2026.3694375",
     "arxiv": "https://arxiv.org/abs/2508.11267",
     "topics": [
-      "edge",
-      "learning"
+      "edge"
     ],
     "featured": true,
     "summary": "Combines feature compression and spread spectrum to protect distributed sensing from interference within a fixed bandwidth.",
@@ -73,8 +72,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1109/TWC.2024.3368197",
     "arxiv": "https://arxiv.org/abs/2305.05933",
     "topics": [
-      "learning",
-      "edge"
+      "learning"
     ],
     "featured": true,
     "summary": "Balances gradient pruning and spread spectrum to suppress interference in over-the-air federated learning without expanding bandwidth.",
@@ -94,8 +92,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1109/TCOMM.2026.3666674",
     "arxiv": "https://arxiv.org/abs/2507.15601",
     "topics": [
-      "learning",
-      "edge"
+      "learning"
     ],
     "featured": false,
     "summary": "Adapts batch sizes to heterogeneous device and channel capabilities by balancing computation time against communication rounds.",
@@ -218,7 +215,8 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1109/COMST.2025.3592989",
     "arxiv": "https://arxiv.org/abs/2501.06726",
     "topics": [
-      "edge"
+      "edge",
+      "learning"
     ],
     "featured": false,
     "summary": "Surveys integrated sensing and edge AI, including architectures, design metrics, communication techniques, and future research directions.",
@@ -227,13 +225,36 @@ window.PUBLICATIONS = [
     "summarySource": "https://arxiv.org/abs/2501.06726"
   },
   {
+    "id": "p7",
+    "type": "preprint",
+    "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+    "authors": "Zhanwei Wang, Jianhao Huang, Min Sheng, and Kaibin Huang*",
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "citation": "arXiv:2610.16395, 2026.",
+    "url": "https://arxiv.org/abs/2610.16395",
+    "arxiv": "https://arxiv.org/abs/2610.16395",
+    "topics": [
+      "space",
+      "edge"
+    ],
+    "featured": true,
+    "summary": "How should satellite constellations be designed and orchestrated to deliver data-center-scale AI services competitive with their terrestrial counterparts? This work provides a roadmap-oriented answer.",
+    "status": "preprint",
+    "bibliographicSource": "https://arxiv.org/abs/2610.16395v1",
+    "summarySource": "https://arxiv.org/abs/2610.16395v1",
+    "statusSource": "https://arxiv.org/abs/2610.16395v1",
+    "arxivDate": "2026-10-12",
+    "arxivVersion": "v1"
+  },
+  {
     "id": "p1",
     "type": "preprint",
     "title": "SpaceMoE: Realizing Distributed Mixture-of-Experts Inference over Space Networks",
     "authors": "Zhanwei Wang, Huiling Yang, Min Sheng, Khaled B. Letaief, and Kaibin Huang*",
     "year": 2026,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2026. arXiv:2605.00515.",
+    "citation": "arXiv:2605.00515, 2026.",
     "doi": null,
     "url": "https://arxiv.org/abs/2605.00515",
     "arxiv": "https://arxiv.org/abs/2605.00515",
@@ -254,7 +275,7 @@ window.PUBLICATIONS = [
     "authors": "Huiling Yang, Zhanwei Wang*, and Kaibin Huang*",
     "year": 2026,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2026. arXiv:2608.22932.",
+    "citation": "arXiv:2608.22932, 2026.",
     "doi": null,
     "url": "https://arxiv.org/abs/2608.22932",
     "arxiv": "https://arxiv.org/abs/2608.22932",
@@ -274,12 +295,13 @@ window.PUBLICATIONS = [
     "authors": "Jianhao Huang, Zhanwei Wang, Khaled B. Letaief, and Kaibin Huang*",
     "year": 2026,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2026. arXiv:2609.20899.",
+    "citation": "arXiv:2609.20899, 2026.",
     "doi": null,
     "url": "https://arxiv.org/abs/2609.20899",
     "arxiv": "https://arxiv.org/abs/2609.20899",
     "topics": [
-      "space"
+      "space",
+      "edge"
     ],
     "featured": false,
     "summary": "Uses diffusion models aboard satellites to reconstruct distorted image data before forwarding, with energy-aware early exit.",
@@ -294,7 +316,7 @@ window.PUBLICATIONS = [
     "authors": "Haotian Zheng, Zhanwei Wang, Mingyao Cui, Chang Cai, Hongyang Du, and Kaibin Huang*",
     "year": 2026,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2026. arXiv:2606.04581.",
+    "citation": "arXiv:2606.04581, 2026.",
     "doi": null,
     "url": "https://arxiv.org/abs/2606.04581",
     "arxiv": "https://arxiv.org/abs/2606.04581",
@@ -314,12 +336,13 @@ window.PUBLICATIONS = [
     "authors": "Jierui Zhang, Jianhao Huang, Zhanwei Wang, and Kaibin Huang*",
     "year": 2026,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2026. arXiv:2609.01062.",
+    "citation": "arXiv:2609.01062, 2026.",
     "doi": null,
     "url": "https://arxiv.org/abs/2609.01062",
     "arxiv": "https://arxiv.org/abs/2609.01062",
     "topics": [
-      "space"
+      "space",
+      "edge"
     ],
     "featured": false,
     "summary": "Balances image-generation steps and downlink transmission using the predictable solar-energy budget of orbiting satellites.",
@@ -334,7 +357,7 @@ window.PUBLICATIONS = [
     "authors": "Qunsong Zeng, Jianhao Huang, Zhanwei Wang, Kaibin Huang*, and Kin K. Leung",
     "year": 2025,
     "venue": "arXiv preprint",
-    "citation": "Submitted to IEEE for possible publication, 2025. arXiv:2503.04645.",
+    "citation": "arXiv:2503.04645, 2025.",
     "doi": null,
     "url": "https://arxiv.org/abs/2503.04645",
     "arxiv": "https://arxiv.org/abs/2503.04645",
@@ -359,8 +382,7 @@ window.PUBLICATIONS = [
     "url": null,
     "arxiv": null,
     "topics": [
-      "edge",
-      "learning"
+      "edge"
     ],
     "featured": false,
     "summary": null,
@@ -423,8 +445,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1109/GLOBECOM54140.2023.10437548",
     "arxiv": null,
     "topics": [
-      "learning",
-      "edge"
+      "learning"
     ],
     "featured": false,
     "summary": null,
@@ -487,8 +508,7 @@ window.PUBLICATIONS = [
     "url": null,
     "arxiv": null,
     "topics": [
-      "learning",
-      "edge"
+      "learning"
     ],
     "featured": false,
     "summary": null,

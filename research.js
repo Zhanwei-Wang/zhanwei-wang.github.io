@@ -8,9 +8,9 @@
   const section = document.getElementById('research');
   if (!section || !Array.isArray(window.PUBLICATIONS)) return;
   const themes = {
-    space: { number: '01', label: 'Space AI', labelZh: '空间人工智能', headingZh: '让智能走向太空', descriptionZh: '面向互联卫星系统的分布式推理与生成式 AI。', subtitle: 'Intelligence in orbit', subtitleZh: '在轨智能', heading: 'Bringing intelligence into orbit', description: 'Distributed inference and generative AI across connected satellite systems.', papers: ['p1', 'p3', 'p5', 'j6'] },
-    edge: { number: '02', label: 'Edge Intelligence', labelZh: '边缘智能', headingZh: '让智能贴近数据源', descriptionZh: '联合设计感知、通信与计算，在无线边缘实现可靠感知与高效 AI。', subtitle: 'Sensing, inference & generative AI', subtitleZh: '感知、推理与生成式 AI', heading: 'Intelligence where data is generated', description: 'Joint sensing, communication, and computation for reliable perception and efficient AI at the wireless edge.', papers: ['j2', 'j3', 'p4', 'p6', 'j7', 'j11'] },
-    learning: { number: '03', label: 'Over-the-Air Computation', labelZh: '空中计算', headingZh: '让无线信道参与计算', descriptionZh: '利用无线信号叠加，实现分布式学习、感知与专家推理。', subtitle: 'Compute with wireless channel', subtitleZh: '利用无线信道计算', heading: 'Turning wireless channels into computation', description: 'Distributed learning, sensing, and expert inference through wireless signal superposition.', papers: ['j4', 'j1', 'j5', 'p2'] },
+    space: { number: '01', label: 'Space AI', labelZh: '太空人工智能', headingZh: '让智能走向太空', descriptionZh: '卫星网络中的分布式基础模型推理', subtitle: 'Foundation Models in Space Networks', subtitleZh: '太空网络中的基础模型', heading: 'Bringing intelligence into orbit', description: 'Distributed foundation-model inference across satellite networks', papers: ['p7', 'p1', 'p3', 'p5', 'j6'] },
+    edge: { number: '02', label: 'Edge Inference', labelZh: '边缘推理', headingZh: '可靠的边缘推理', descriptionZh: '协同设计感知、通信与计算，在无线边缘实现低时延感知、分类与生成式 AI 推理。', subtitle: 'Distributed LLM Inference and Sensing', subtitleZh: '分布式大语言模型推理与感知', heading: 'Reliable inference at the edge', description: 'Joint sensing, communication, and computation for low-latency perception, classification, and generative AI inference at the wireless edge.', papers: ['j2', 'j3', 'j1', 'p2', 'p4', 'p6', 'j7', 'j11', 'j6', 'p1', 'p3', 'p5', 'p7'] },
+    learning: { number: '03', label: 'Edge Learning', labelZh: '边缘学习', headingZh: '无线设备协同学习', descriptionZh: '面向无线设备的联邦与分布式训练，联合优化模型更新、通信效率与学习收敛。', subtitle: 'Distributed AI model training', subtitleZh: '分布式 AI 模型训练', heading: 'Learning across wireless devices', description: 'Federated and distributed training across wireless devices, jointly optimizing model updates, communication efficiency, and learning convergence.', papers: ['j4', 'j5', 'j6', 'j11'] },
     quantum: { number: '04', label: 'Quantum Receivers', labelZh: '量子接收机', headingZh: '探索原子尺度的无线技术', descriptionZh: '面向多频段通信与高灵敏度无线感知的里德堡原子接收机。', subtitle: 'Wireless at the atomic scale', subtitleZh: '原子尺度的无线技术', heading: 'Exploring wireless at the atomic scale', description: 'Rydberg atomic receivers for multi-band communication and sensitive wireless sensing.', papers: ['j8', 'j10'] }
   };
   const titleSummaries = {
@@ -25,7 +25,7 @@
     return figure && figureAsset(figure) && figure.exactPaper === true ? figure : null;
   };
   const figureAsset = figure => /^assets\/papers\/[a-z0-9_-]+\.(?:webp|png|jpe?g)$/i.test(figure?.asset || '') ? figure.asset : null;
-  const figureLabel = figure => t('Fig. ', '图 ') + String(figure.figure || '').replace(/^(?:Figure|Fig\.?)\s*/i, '');
+  const figureName = figure => window.SiteI18n?.lang === 'zh' ? figure.figureNameZh || figure.figureName || figure.caption : figure.figureName || figure.caption;
   const paperFigures = paper => {
     const primary = figures[paper.id];
     if (!primary || paper.presentation === 'list-only') return [];
@@ -39,7 +39,7 @@
   const topicButtons = [...section.querySelectorAll('[data-research-topic]')];
   const rail = section.querySelector('#research-paper-rail');
   let currentTheme = 'space';
-  let selectedPaper = 'p1';
+  let selectedPaper = 'p7';
   const setText = (id, value) => { section.querySelector(`#${id}`).textContent = value; };
   const shortVenue = paper => {
     if (paper.type === 'preprint') return 'arXiv';
@@ -89,7 +89,7 @@
       link.rel = 'noopener noreferrer';
       link.dataset.figureId = paper.id;
       link.dataset.figureIndex = String(index);
-      link.setAttribute('aria-label', t('Open {figure} from {title} at full size', '查看论文《{title}》中的完整{figure}', {figure:figureLabel(figure),title:paper.title}));
+      link.setAttribute('aria-label', t('Open {figure} from {title} at full size', '查看论文《{title}》中的完整{figure}', {figure:figureName(figure),title:paper.title}));
       image.src = asset;
       image.alt = figureText(paper, figure, 'alt', index) || t('{title}: figure from the paper.', '论文《{title}》中的图示。', {title:paper.title});
       image.width = figure.width || 600;
@@ -107,7 +107,7 @@
       link.append(image);
       const sourceURL = figure.sourceUrl && /^https:\/\//.test(figure.sourceUrl) ? figure.sourceUrl : null;
       const captionLabel = document.createElement(sourceURL ? 'a' : 'span');
-      captionLabel.textContent = figureText(paper, figure, 'caption', index);
+      captionLabel.textContent = figureName(figure);
       if (sourceURL) {
         captionLabel.href = sourceURL;
         captionLabel.target = '_blank';
@@ -124,7 +124,7 @@
     selectedPaper = id;
     setText('project-kind', t(...(typeLabels[paper.type] || ['Research paper', '研究论文'])));
     setText('project-year', String(paper.year));
-    setText('project-status', paper.type === 'preprint' ? t('Submitted', '已投稿') : t(...(statuses[paper.status] || [paper.status, paper.status])));
+    setText('project-status', paper.type === 'preprint' ? 'arXiv' : t(...(statuses[paper.status] || [paper.status, paper.status])));
     setText('project-title', paper.title);
     setText('project-summary', summary(paper) || titleSummaries[id] || paper.title);
     setAuthors(paper.authors);

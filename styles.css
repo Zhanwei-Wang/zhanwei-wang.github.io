@@ -19,7 +19,7 @@ dialog{border:1px solid var(--line);border-radius:12px;max-width:650px;width:cal
 .publication-figure>a{display:flex;min-height:140px;align-items:center;justify-content:center;border-radius:4px}
 .publication-figure img{display:block;width:100%;height:auto;max-height:205px;object-fit:contain}
 .publication-figure figcaption{font-size:0.75rem;line-height:1.5;margin:9px 0 8px;text-align:center}
-.publication-figure-number{color:#7487a0}
+.publication-figure-caption{color:#7487a0}
 .publication-copy{min-width:0}.has-figure .publication-copy>.publication-year{display:inline-block;min-width:0;margin:0 0 8px;padding:3px 7px;font-size:0.75rem}
 .publication-figure-stack{display:grid;gap:14px;min-width:0;align-self:center}
 .figure-dialog{max-width:1000px;width:calc(100% - 32px);max-height:92vh;padding:25px;overflow:auto}
@@ -53,4 +53,34 @@ html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{letter-spacing
   .publication-card.has-multiple-figures .publication-figure-stack{gap:9px}
   .publication-card.has-multiple-figures .publication-figure{padding:9px 6px 0}
   .publication-card.has-multiple-figures .publication-figure>a{height:145px}
+}
+
+/* Compact introduction spacing. */
+.about-section .eyebrow{margin-bottom:10px}
+.about-section h1{line-height:1.2;margin-bottom:12px}
+.about-section p{line-height:1.7;margin-bottom:10px}
+.about-section p.intro-lead{line-height:1.7;margin-bottom:12px}
+.about-section .about-links{margin-top:14px}
+html[lang=zh-Hans] .about-section p{max-width:none}
+@media(max-width:560px){
+  .about-section .eyebrow{margin-bottom:8px}
+  .about-section h1{margin-bottom:10px}
+  .about-section p{margin-bottom:9px}
+  .about-section p.intro-lead{margin-bottom:11px}
+  .about-section .about-links{margin-top:12px}
+}
+
+/* Compact English biography. */
+html[lang=en] .about-section .eyebrow{margin-bottom:8px}
+html[lang=en] .about-section h1{margin-bottom:10px}
+html[lang=en] .about-section p{max-width:none;line-height:1.65;margin-bottom:8px}
+html[lang=en] .about-section p.intro-lead{line-height:1.65;margin-bottom:10px}
+html[lang=en] .about-section .about-links{margin-top:12px}
+
+/* The greeting appears only in the English introduction. */
+html[lang=zh-Hans] .about-section [data-i18n=aboutGreeting]{display:none}
+
+/* Single-line Chinese research focus on wide screens. */
+@media(min-width:1280px){
+  html[lang=zh-Hans] .about-section p.intro-lead{font-size:1.125rem;letter-spacing:-.02em}
 }

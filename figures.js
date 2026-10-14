@@ -19,7 +19,11 @@ window.PAPER_FIGURES = {
       49,
       301,
       206
-    ]
+    ],
+    "figureName": "AirComp-based ISEA system with mult-view sensing.",
+    "figureNameZh": "基于 AirComp 的多视角感知 ISEA 系统。",
+    "sourceCaption": "AirComp-based ISEA system with mult-view sensing.",
+    "figureNameVerified": true
   },
   "j3": {
     "asset": "assets/papers/j3.webp",
@@ -40,7 +44,11 @@ window.PAPER_FIGURES = {
       49,
       301,
       226
-    ]
+    ],
+    "figureName": "The transceiver framework of the edge inference system.",
+    "figureNameZh": "边缘推理系统的收发机框架。",
+    "sourceCaption": "The transceiver framework of the edge inference system.",
+    "figureNameVerified": true
   },
   "j5": {
     "asset": "assets/papers/j5.webp",
@@ -61,7 +69,11 @@ window.PAPER_FIGURES = {
       49,
       564,
       222
-    ]
+    ],
+    "figureName": "FL system with synchronous model updates.",
+    "figureNameZh": "采用同步模型更新的联邦学习系统。",
+    "sourceCaption": "FL system with synchronous model updates.",
+    "figureNameVerified": true
   },
   "j6": {
     "asset": "assets/papers/j6.webp",
@@ -82,7 +94,11 @@ window.PAPER_FIGURES = {
       303,
       564,
       478
-    ]
+    ],
+    "figureName": "Distributed learning, inference, and model downloading in fluid AI systems.",
+    "figureNameZh": "流动式 AI 系统中的分布式学习、推理与模型下载。",
+    "sourceCaption": "Distributed learning, inference, and model downloading in fluid AI systems.",
+    "figureNameVerified": true
   },
   "j7": {
     "asset": "assets/papers/j7.webp",
@@ -103,7 +119,11 @@ window.PAPER_FIGURES = {
       49,
       301,
       204
-    ]
+    ],
+    "figureName": "Knowledge-based robotic SemCom system.",
+    "figureNameZh": "基于知识的机器人语义通信系统。",
+    "sourceCaption": "Knowledge-based robotic SemCom system. The task of a robot, comprising a sequence of objects and actions, corresponds to paths within a KG. An edge server, equipped with KG, serves as a “remote brain” that identifies feasible KPs by analyzing the observations uploaded by the robot.",
+    "figureNameVerified": true
   },
   "j10": {
     "asset": "assets/papers/j10.webp",
@@ -124,7 +144,11 @@ window.PAPER_FIGURES = {
       49,
       301,
       196
-    ]
+    ],
+    "figureName": "Architecture of a multi-band RARE.",
+    "figureNameZh": "多频段 RARE 的架构。",
+    "sourceCaption": "(a) Architecture of a multi-band RARE. (b) Multi-level electron transitions for measuring multi-band signals.",
+    "figureNameVerified": true
   },
   "j11": {
     "asset": "assets/papers/j11.webp",
@@ -145,7 +169,11 @@ window.PAPER_FIGURES = {
       49,
       564,
       343
-    ]
+    ],
+    "figureName": "ISEA can be instantiated into different paradigms depending on the placement of AI models and computation powers, network topologies, and communication capabilities.",
+    "figureNameZh": "ISEA 可根据 AI 模型与计算能力的部署位置、网络拓扑和通信能力实现为不同范式。",
+    "sourceCaption": "ISEA can be instantiated into different paradigms depending on the placement of AI models and computation powers, network topologies, and communication capabilities.",
+    "figureNameVerified": true
   },
   "p2": {
     "page": 4,
@@ -160,7 +188,11 @@ window.PAPER_FIGURES = {
     "sourceUrl": "https://arxiv.org/abs/2608.22932v2",
     "pdfUrl": "https://arxiv.org/pdf/2608.22932v2",
     "versionNote": "Figure from the exact paper, arXiv 2608.22932v2.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "AirMoE inference protocol.",
+    "figureNameZh": "AirMoE 推理协议。",
+    "sourceCaption": "AirMoE inference protocol.",
+    "figureNameVerified": true
   },
   "p3": {
     "page": 1,
@@ -175,7 +207,11 @@ window.PAPER_FIGURES = {
     "sourceUrl": "https://arxiv.org/abs/2609.20899v1",
     "pdfUrl": "https://arxiv.org/pdf/2609.20899v1",
     "versionNote": "Figure from the exact paper, arXiv 2609.20899v1.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "Comparison of the satellite generate-and-forward scheme with the conventional decode-and-forward scheme.",
+    "figureNameZh": "卫星生成转发方案与传统译码转发方案对比。",
+    "sourceCaption": "Comparison of the satellite generate-and-forward scheme with the conventional decode-and-forward scheme.",
+    "figureNameVerified": true
   },
   "p4": {
     "page": 5,
@@ -190,7 +226,11 @@ window.PAPER_FIGURES = {
     "sourceUrl": "https://arxiv.org/abs/2606.04581v2",
     "pdfUrl": "https://arxiv.org/pdf/2606.04581v2",
     "versionNote": "Figure from the exact paper, arXiv 2606.04581v2.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "Overview of the Multi-SPIN framework.",
+    "figureNameZh": "Multi-SPIN 框架概览。",
+    "sourceCaption": "Overview of the Multi-SPIN framework.",
+    "figureNameVerified": true
   },
   "p5": {
     "page": 4,
@@ -205,7 +245,11 @@ window.PAPER_FIGURES = {
     "sourceUrl": "https://arxiv.org/abs/2609.01062v1",
     "pdfUrl": "https://arxiv.org/pdf/2609.01062v1",
     "versionNote": "Figure from the exact paper, arXiv 2609.01062v1.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "System model of space generative AI.",
+    "figureNameZh": "太空生成式 AI 的系统模型。",
+    "sourceCaption": "System model of space generative AI.",
+    "figureNameVerified": true
   },
   "p6": {
     "page": 3,
@@ -220,7 +264,11 @@ window.PAPER_FIGURES = {
     "sourceUrl": "https://arxiv.org/abs/2503.04645v1",
     "pdfUrl": "https://arxiv.org/pdf/2503.04645v1",
     "versionNote": "Figure from the exact paper, arXiv 2503.04645v1.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "An illustration of an E2E ultra-low-latency EI-Sense system.",
+    "figureNameZh": "端到端超低时延 EI-Sense 系统示意图。",
+    "sourceCaption": "An illustration of an E2E ultra-low-latency EI-Sense system. (a) System architecture and operations at the sensor and edge server. (b) Parallelization between sensing and communication in the sequential sensing scenario.",
+    "figureNameVerified": true
   },
   "j2": {
     "asset": "assets/papers/j2.webp",
@@ -237,7 +285,11 @@ window.PAPER_FIGURES = {
     "alt": "Sensing models and CNN classifier in an ultra-LoLa edge inference system.",
     "reason": "Visually reviewed architecture or scenario diagram presenting the paper's central system.",
     "versionNote": "Figure from the verified author preprint of this paper.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "Sensing models and CNN classifier in an ultra-LoLa edge inference system.",
+    "figureNameZh": "超低时延边缘推理系统中的感知模型与 CNN 分类器。",
+    "sourceCaption": "Sensing models and CNN classifier in an ultra-LoLa edge inference system.",
+    "figureNameVerified": true
   },
   "j4": {
     "asset": "assets/papers/j4.webp",
@@ -254,7 +306,11 @@ window.PAPER_FIGURES = {
     "alt": "System diagram of AirFL system perturbed by interference.",
     "reason": "Visually reviewed architecture or scenario diagram presenting the paper's central system.",
     "versionNote": "Figure from the verified author preprint of this paper.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "System diagram of AirFL system perturbed by interference.",
+    "figureNameZh": "受到干扰的 AirFL 系统示意图。",
+    "sourceCaption": "System diagram of AirFL system perturbed by interference.",
+    "figureNameVerified": true
   },
   "j8": {
     "asset": "assets/papers/j8.webp",
@@ -271,53 +327,65 @@ window.PAPER_FIGURES = {
     "alt": "The proposed quantum self-heterodyne sensing system.",
     "reason": "Visually reviewed architecture or scenario diagram presenting the paper's central system.",
     "versionNote": "Figure from the verified author preprint of this paper.",
-    "exactPaper": true
+    "exactPaper": true,
+    "figureName": "The proposed quantum self-heterodyne sensing system.",
+    "figureNameZh": "所提出的量子自外差感知系统。",
+    "sourceCaption": "The proposed quantum self-heterodyne sensing system.",
+    "figureNameVerified": true
   },
   "p1": {
-    "asset": "assets/papers/p1.webp",
-    "width": 1350,
-    "height": 680,
-    "caption": "A satellite constellation and its evolving network topology.",
-    "alt": "SpaceMoE satellite constellation with inter-orbit and intra-orbit links, tracking errors and radiation-induced outages, alongside its time-varying network topology.",
-    "sourceUrl": "https://arxiv.org/abs/2605.00515",
-    "sourceTitle": "SpaceMoE: Realizing Distributed Mixture-of-Experts Inference over Space Networks",
-    "pdfUrl": "https://arxiv.org/pdf/2605.00515",
-    "figure": "Figure 1",
-    "page": 3,
-    "reason": "Shows the constellation scenario and its evolving topology, paired with the SpaceMoE token-routing architecture.",
-    "versionNote": "Figure from the verified author preprint of this paper.",
-    "exactPaper": true,
+    "asset": "assets/papers/p1-architecture.webp",
+    "width": 1801,
+    "height": 1232,
+    "figure": "Figure 3",
+    "page": 5,
     "cropRectPoints": [
-      310.0,
-      49.0,
-      580.0,
-      185.0
+      311,
+      50,
+      564,
+      223
     ],
-    "additionalFigures": [
-      {
-        "asset": "assets/papers/p1-architecture.webp",
-        "width": 1801,
-        "height": 1232,
-        "figure": "Figure 3",
-        "page": 5,
-        "cropRectPoints": [
-          311,
-          50,
-          564,
-          223
-        ],
-        "sourceUrl": "https://arxiv.org/abs/2605.00515v2",
-        "pdfUrl": "https://arxiv.org/pdf/2605.00515v2",
-        "sourceTitle": "SpaceMoE: Realizing Distributed Mixture-of-Experts Inference over Space Networks",
-        "caption": "Gateway satellites route tokens to distributed expert satellites in SpaceMoE.",
-        "alt": "SpaceMoE gateway satellite l routes tokens to expert satellites 1, i, and I before forwarding outputs to gateway satellite l+1. The gateway inset shows self-attention with KV cache, normalization, gating, routing control, and token aggregation.",
-        "captionZh": "SpaceMoE 中，网关卫星将词元路由至分布式专家卫星。",
-        "altZh": "SpaceMoE 网关卫星 l 将词元路由至专家卫星 1、i、I，再将输出传递至下一层网关卫星 l+1。网关插图展示带 KV 缓存的自注意力、归一化、门控网络、路由控制与词元聚合。",
-        "versionNote": "Extracted from Figure 3 on page 5 of the exact author preprint arXiv:2605.00515v2. The genuine artwork matches the user-attached architecture screenshot; screenshot presentation border omitted.",
-        "reason": "This is the user-requested gateway/expert-satellite token-routing architecture, including the Transformer and gate/routing inset.",
-        "exactPaper": true,
-        "attachedScreenshotMatched": true
-      }
-    ]
+    "sourceUrl": "https://arxiv.org/abs/2605.00515v2",
+    "pdfUrl": "https://arxiv.org/pdf/2605.00515v2",
+    "sourceTitle": "SpaceMoE: Realizing Distributed Mixture-of-Experts Inference over Space Networks",
+    "caption": "Gateway satellites route tokens to distributed expert satellites in SpaceMoE.",
+    "alt": "SpaceMoE gateway satellite l routes tokens to expert satellites 1, i, and I before forwarding outputs to gateway satellite l+1. The gateway inset shows self-attention with KV cache, normalization, gating, routing control, and token aggregation.",
+    "captionZh": "SpaceMoE 中，网关卫星将词元路由至分布式专家卫星。",
+    "altZh": "SpaceMoE 网关卫星 l 将词元路由至专家卫星 1、i、I，再将输出传递至下一层网关卫星 l+1。网关插图展示带 KV 缓存的自注意力、归一化、门控网络、路由控制与词元聚合。",
+    "versionNote": "Extracted from Figure 3 on page 5 of the exact author preprint arXiv:2605.00515v2. The genuine artwork matches the user-attached architecture screenshot; screenshot presentation border omitted.",
+    "reason": "This is the user-requested gateway/expert-satellite token-routing architecture, including the Transformer and gate/routing inset.",
+    "exactPaper": true,
+    "attachedScreenshotMatched": true,
+    "figureName": "Functional role of satellites in SpaceMoE.",
+    "figureNameZh": "SpaceMoE 中卫星的功能角色。",
+    "sourceCaption": "Functional role of satellites in SpaceMoE.",
+    "figureNameVerified": true
+  },
+  "p7": {
+    "width": 1870,
+    "height": 1035,
+    "sourceUrl": "https://arxiv.org/abs/2610.16395v1",
+    "sourceTitle": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+    "pdfUrl": "https://arxiv.org/pdf/2610.16395v1",
+    "page": 2,
+    "reason": "User requested the roadmap figure in place of Figure 4. Figure 1 directly shows the progression from onboard AI through space edge AI to orbital cloud AI.",
+    "versionNote": "Exact arXiv v1 PDF. Original roadmap diagram extracted without surrounding prose or external figure caption. All diagram labels and stage panels preserved; no synthetic content.",
+    "exactPaper": true,
+    "asset": "assets/papers/p7-roadmap.webp",
+    "caption": "Roadmap from onboard AI to space edge AI and orbital cloud AI.",
+    "alt": "Three-stage space AI roadmap along an increasing AI-capacity timeline: onboard AI, space edge AI, and space cloud AI, with satellite and application illustrations.",
+    "captionZh": "从星载 AI 到太空边缘 AI 和轨道云 AI 的发展路线图。",
+    "altZh": "太空 AI 能力随时间提升的三阶段路线图：星载 AI、太空边缘 AI 和太空云 AI，配有卫星与应用场景示意。",
+    "figure": "Figure 1",
+    "cropRectPoints": [
+      117,
+      96,
+      491,
+      303
+    ],
+    "figureName": "Roadmap of Space AI Infrastructure.",
+    "figureNameZh": "太空 AI 基础设施发展路线图。",
+    "sourceCaption": "Roadmap of Space AI Infrastructure.",
+    "figureNameVerified": true
   }
 };

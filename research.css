@@ -128,7 +128,7 @@
   transition:box-shadow .25s ease;
 }
 .research-landscape .landscape-scene.is-active{opacity:1;box-shadow:inset 0 1px 0 #fff,0 3px 13px var(--scene-glow)}
-.research-landscape .map-illustration.landscape-art{display:block;width:100%;height:160px;max-height:none;min-height:0;margin:0}
+.research-landscape .map-illustration.landscape-art{display:block;width:100%;height:auto;aspect-ratio:260/208;max-height:none;min-height:0;margin:0}
 .landscape-topic-copy{display:flex;flex-direction:column;align-items:flex-start;padding:14px 9px 16px;min-height:130px;flex:1}
 .research-landscape .map-topic-number{font-size:.75rem;font-weight:650;line-height:1.2;letter-spacing:.1em;color:#91a0b5;margin-bottom:9px}
 .research-landscape .map-topic-title{font-size:1rem;font-weight:700;line-height:1.4;letter-spacing:-.02em;color:#283b54;overflow-wrap:normal}
@@ -155,20 +155,18 @@
 }
 @media(max-width:1309px){
   .research-landscape .map-topic-buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .research-landscape .map-illustration.landscape-art{max-height:240px;width:100%;object-fit:contain}
   .landscape-topic-copy{min-height:113px;padding:14px 15px 17px}
   .research-landscape .map-topic-title{font-size:1rem}
 }
 @media(max-width:600px){
   .research-landscape{padding:11px 10px 13px;border-radius:16px}
   .research-landscape .map-topic-buttons{grid-template-columns:minmax(0,1fr);gap:8px}
-  .research-landscape .map-topic-button.landscape-topic-card{border-radius:12px;min-height:0;padding:0}
-  .research-landscape .landscape-scene{width:calc(100% - 12px);margin:6px 6px 0;border-radius:9px}
-  .research-landscape .map-illustration.landscape-art{height:145px;min-height:0;max-height:none}
-  .landscape-topic-copy{min-height:108px;padding:13px 15px 16px}
-  .research-landscape .map-topic-number{font-size:.75rem;margin-bottom:7px}
-  .research-landscape .map-topic-title{font-size:1rem;line-height:1.4}
-  .research-landscape .map-topic-subtitle{font-size:.75rem;line-height:1.5;margin-top:6px}
+  .research-landscape .map-topic-button.landscape-topic-card{display:grid;grid-template-columns:clamp(90px,28vw,120px) minmax(0,1fr);grid-template-rows:auto auto auto;gap:8px 14px;border-radius:12px;min-height:0;padding:12px 14px}
+  .research-landscape .landscape-scene{grid-column:1;grid-row:2/span 2;align-self:center;width:100%;margin:0;border-radius:9px}
+  .landscape-topic-copy{display:contents;min-height:0;padding:0}
+  .research-landscape .map-topic-number{grid-column:2;grid-row:2;align-self:end;font-size:.75rem;margin:0}
+  .research-landscape .map-topic-title{grid-column:1/-1;grid-row:1;font-size:1rem;line-height:1.4}
+  .research-landscape .map-topic-subtitle{grid-column:2;grid-row:3;align-self:start;font-size:.75rem;line-height:1.5;margin:0}
   .research-landscape .map-concept-note{font-size:.75rem;margin:12px 4px 0;line-height:1.6}
 }
 @media(max-width:360px){

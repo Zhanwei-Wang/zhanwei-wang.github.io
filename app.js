@@ -19,8 +19,8 @@
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const safeURL = value => {try { const u = new URL(value); return u.protocol === 'https:' ? u.href : null; } catch { return null; }};
   const paperLink = (value, label) => {const url = safeURL(value); return url ? `<a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>` : '';};
-  const statusLabel = paper => paper.venue.includes('Letters') ? t('Research letter', '研究短文') : paper.type === 'preprint' ? t('Preprint · submitted', '预印本 · 已投稿') : paper.status === 'accepted' ? t('Accepted conference paper', '已录用会议论文') : paper.type === 'journal' ? t('Journal article', '期刊论文') : t('Conference paper', '会议论文');
-  const figureLabel = figure => t('Fig. ', '图 ') + String(figure.figure || '').replace(/^(?:Figure|Fig\.?)\s*/i, '');
+  const statusLabel = paper => paper.venue.includes('Letters') ? t('Research letter', '研究短文') : paper.type === 'preprint' ? t('Preprint', '预印本') : paper.status === 'accepted' ? t('Accepted conference paper', '已录用会议论文') : paper.type === 'journal' ? t('Journal article', '期刊论文') : t('Conference paper', '会议论文');
+  const figureName = figure => window.SiteI18n?.lang === 'zh' ? figure.figureNameZh || figure.figureName || figure.caption : figure.figureName || figure.caption;
   const figureAsset = figure => /^assets\/papers\/[a-z0-9_-]+\.(?:webp|png|jpe?g)$/i.test(figure?.asset || '') ? figure.asset : null;
   const paperFigures = paper => {
     const primary = figures[paper.id];
@@ -29,14 +29,14 @@
   const paperFigureEntries = paper => paper.presentation === 'list-only' ? [] : paperFigures(paper).map((figure, index) => ({figure, index, asset:figureAsset(figure)})).filter(({figure, asset}) => asset && figure.exactPaper === true);
   function paperFigure(paper, entries = paperFigureEntries(paper)) {
     if (!entries.length) return '';
-    const markup = entries.map(({figure, index, asset}) => `<figure class="publication-figure"><a class="paper-figure-link" href="${escapeHTML(asset)}" target="_blank" rel="noopener noreferrer" data-figure-id="${escapeHTML(paper.id)}" data-figure-index="${index}" aria-label="${escapeHTML(t('Enlarge {figure} from {title}', '放大论文《{title}》中的{figure}', {figure:figureLabel(figure),title:paper.title}))}"><img src="${escapeHTML(asset)}" width="${figure.width}" height="${figure.height}" alt="${escapeHTML(figureText(paper, figure, 'alt', index))}" loading="lazy" decoding="async"></a><figcaption>${entries.length > 1 ? `<p class="publication-figure-description">${escapeHTML(figureText(paper, figure, 'caption', index))}</p>` : ''}<span class="publication-figure-number">${escapeHTML(figureLabel(figure))}</span></figcaption></figure>`).join('');
+    const markup = entries.map(({figure, index, asset}) => `<figure class="publication-figure"><a class="paper-figure-link" href="${escapeHTML(asset)}" target="_blank" rel="noopener noreferrer" data-figure-id="${escapeHTML(paper.id)}" data-figure-index="${index}" aria-label="${escapeHTML(t('Enlarge {figure} from {title}', '放大论文《{title}》中的{figure}', {figure:figureName(figure),title:paper.title}))}"><img src="${escapeHTML(asset)}" width="${figure.width}" height="${figure.height}" alt="${escapeHTML(figureText(paper, figure, 'alt', index))}" loading="lazy" decoding="async"></a><figcaption class="publication-figure-caption">${escapeHTML(figureName(figure))}</figcaption></figure>`).join('');
     return entries.length > 1 ? `<div class="publication-figure-stack">${markup}</div>` : markup;
   }
 
   function render() {
     const query = search.value.trim().toLocaleLowerCase();
     const visible = papers.filter(p => (selectedType === 'all' || (selectedType === 'selected' ? p.featured : p.type === selectedType)) && (topic.value === 'all' || p.topics.includes(topic.value)) && `${p.title} ${p.authors} ${p.citation} ${p.summary || ''} ${summary(p) || ''} ${window.PAPER_ZH?.[p.id]?.summary || ''} ${citation(p)} ${p.year}`.toLocaleLowerCase().includes(query));
-    const featuredOrder = ['p1','j1','j3','j2','j4'];
+    const featuredOrder = ['p7','p1','j1','j3','j2','j4'];
     visible.sort((a,b) => selectedType === 'selected' ? featuredOrder.indexOf(a.id) - featuredOrder.indexOf(b.id) : b.year - a.year);
     count.textContent = selectedType === 'selected' ? t(`{count} ${visible.length === 1 ? 'publication' : 'publications'} selected`, '精选 {count} 篇论文', {count:visible.length}) : t(`{count} ${visible.length === 1 ? 'publication' : 'publications'}`, '共 {count} 篇论文', {count:visible.length});
     tabs.forEach(t => {const active = t.dataset.type === selectedType; t.classList.toggle('selected',active); t.setAttribute('aria-pressed',String(active));});
@@ -117,7 +117,7 @@
     fullFigure.width = figure.width;
     fullFigure.height = figure.height;
     document.getElementById('figure-original-link').href = asset;
-    document.getElementById('figure-full-caption').textContent = `${figureLabel(figure)}. ${figureText(paper, figure, 'caption', figureIndex)}`;
+    document.getElementById('figure-full-caption').textContent = figureName(figure);
     const source = document.getElementById('figure-source-link');
     const sourceURL = safeURL(figure.sourceUrl);
     source.hidden = !sourceURL;
