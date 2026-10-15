@@ -118,7 +118,7 @@ window.SITE_ZH = {
   "invitedTalkDate": "受邀报告 · 2026年9月30日",
   "invitedTalkForum": "泛在智能通信网络技术前沿论坛（ICAI 2026 通信工程学院分论坛）· 西安电子科技大学杭州研究院",
   "footerUpdated": "香港 · 更新于 2026 年 10 月",
-  "privacyNotice": "本网站使用 Google Analytics 及 Cookie 统计访问量、访问来源和外链点击。<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">Google 如何收集和处理数据。</a>",
+  "privacyNotice": "本网站使用 Google Analytics 和 Statcounter 统计访问量、访问来源及外链点击。Statcounter 会记录 IP 地址、浏览器和设备信息；这些服务可能使用 Cookie。<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">Google 隐私说明</a> · <a href=\"https://statcounter.com/about/legal/#privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Statcounter 隐私说明</a> · <a href=\"https://statcounter.com/about/set-refusal-cookie/\" target=\"_blank\" rel=\"noopener noreferrer\">Statcounter Cookie 选项</a>。",
   "footerBackToTop": "返回顶部 ↑",
   "closeFigure": "关闭图片",
   "figureSourcePaper": "查看来源论文",
