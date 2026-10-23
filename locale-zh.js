@@ -1,6 +1,5 @@
 /* Simplified Chinese profile translations. Publication names and bibliography stay in their original form. */
 window.SITE_ZH = {
-  "newsDateOctober": "2026年10月",
   "newsSpaceWPT": "新预印本：<a href=\"https://arxiv.org/abs/2610.30923\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceWPT</a> 通过星间无线能量传输降低太空数据中心的 MoE 推理时延。",
   "newsSpaceInfrastructure": "新预印本：<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">Space AI Infrastructure: Where the Edge Meets the Orbital Cloud</a>。",
   "personName": "王占伟",
@@ -58,11 +57,8 @@ window.SITE_ZH = {
   "newsPreprintBadge": "预印本",
   "newsInvitedTalkBadge": "受邀报告",
   "newsXduInvitedTalk": "受邀在西安电子科技大学杭州研究院 ICAI 2026 通信工程学院分论坛“泛在智能通信网络技术前沿论坛”作 <a href=\"https://arxiv.org/abs/2605.00515\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceMoE</a> 主题报告。",
-  "newsDateSeptember": "2026年9月",
-  "newsDateAugust": "2026年8月",
-  "newsDateMay": "2026年5月",
-  "newsDateMarch": "2026年3月",
-  "newsSpacePreprints": "发布新研究：<a href=\"https://arxiv.org/abs/2609.20899\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceDiffusion</a> 与<a href=\"https://arxiv.org/abs/2609.01062\" target=\"_blank\" rel=\"noopener noreferrer\">基于太阳能采集的太空生成式人工智能</a>。",
+  "newsSpaceDiffusion": "新预印本：<a href=\"https://arxiv.org/abs/2609.20899\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceDiffusion</a> 探索用于太空生成转发通信的在轨扩散技术。",
+  "newsSolarEnergy": "新预印本：<a href=\"https://arxiv.org/abs/2609.01062\" target=\"_blank\" rel=\"noopener noreferrer\">Space Generative AI with Solar Energy Harvesting</a>。",
   "newsAirMoE": "<a href=\"https://arxiv.org/abs/2608.22932\" target=\"_blank\" rel=\"noopener noreferrer\">AirMoE</a> 探索无线边缘的空中分布式混合专家推理。",
   "newsSpaceMoE": "<a href=\"https://arxiv.org/abs/2605.00515\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceMoE</a>：太空网络中的分布式混合专家推理。",
   "newsAppointment": "我开始在香港大学担任研究助理教授。",
