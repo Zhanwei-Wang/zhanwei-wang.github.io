@@ -238,7 +238,7 @@ window.PUBLICATIONS = [
       "space",
       "edge"
     ],
-    "featured": true,
+    "featured": false,
     "summary": "SpaceWPT redistributes solar power among satellites through laser-based wireless power transfer and optimizes power control to reduce mixture-of-experts inference latency without changing expert placement or routing.",
     "status": "preprint",
     "bibliographicSource": "https://arxiv.org/abs/2610.30923v1",

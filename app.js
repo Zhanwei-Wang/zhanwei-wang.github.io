@@ -5,6 +5,7 @@
   const citation = paper => window.SiteI18n?.citation(paper) ?? paper.citation;
   const figureText = (paper, figure, key, index = 0) => window.SiteI18n?.lang === 'zh' ? figure[`${key}Zh`] || (index === 0 ? window.PAPER_ZH?.[paper.id]?.[key === 'caption' ? 'figureCaption' : 'figureAlt'] : null) || figure[key] : figure[key];
   const papers = window.PUBLICATIONS || [];
+  const isFeatured = paper => paper.featured && paper.authors.split(',')[0].replace(/\*/g, '').trim() === 'Zhanwei Wang';
   const figures = window.PAPER_FIGURES || {};
   const list = document.getElementById('publication-list');
   const count = document.getElementById('publication-count');
@@ -35,8 +36,8 @@
 
   function render() {
     const query = search.value.trim().toLocaleLowerCase();
-    const visible = papers.filter(p => (selectedType === 'all' || (selectedType === 'selected' ? p.featured : p.type === selectedType)) && (topic.value === 'all' || p.topics.includes(topic.value)) && `${p.title} ${p.authors} ${p.citation} ${p.summary || ''} ${summary(p) || ''} ${window.PAPER_ZH?.[p.id]?.summary || ''} ${citation(p)} ${p.year}`.toLocaleLowerCase().includes(query));
-    const featuredOrder = ['p8','p7','p1','j1','j3','j2','j4'];
+    const visible = papers.filter(p => (selectedType === 'all' || (selectedType === 'selected' ? isFeatured(p) : p.type === selectedType)) && (topic.value === 'all' || p.topics.includes(topic.value)) && `${p.title} ${p.authors} ${p.citation} ${p.summary || ''} ${summary(p) || ''} ${window.PAPER_ZH?.[p.id]?.summary || ''} ${citation(p)} ${p.year}`.toLocaleLowerCase().includes(query));
+    const featuredOrder = ['p7','p1','j1','j3','j2','j4'];
     visible.sort((a,b) => selectedType === 'selected' ? featuredOrder.indexOf(a.id) - featuredOrder.indexOf(b.id) : b.year - a.year);
     count.textContent = selectedType === 'selected' ? t(`{count} ${visible.length === 1 ? 'publication' : 'publications'} selected`, '精选 {count} 篇论文', {count:visible.length}) : t(`{count} ${visible.length === 1 ? 'publication' : 'publications'}`, '共 {count} 篇论文', {count:visible.length});
     tabs.forEach(t => {const active = t.dataset.type === selectedType; t.classList.toggle('selected',active); t.setAttribute('aria-pressed',String(active));});
