@@ -387,5 +387,28 @@ window.PAPER_FIGURES = {
     "figureNameZh": "太空 AI 基础设施发展路线图。",
     "sourceCaption": "Roadmap of Space AI Infrastructure.",
     "figureNameVerified": true
+  },
+  "p8": {
+    "asset": "assets/papers/p8-spacewpt.png",
+    "width": 785,
+    "height": 392,
+    "caption": "SpaceWPT system.",
+    "alt": "The gateway satellite runs attention and gating while expert satellites run expert networks; blue and red arrows show wireless power transfer between idle or active experts and the gateway.",
+    "captionZh": "SpaceWPT 系统。",
+    "altZh": "网关卫星运行注意力与门控模块，专家卫星运行专家网络；蓝色与红色箭头展示空闲和活跃专家卫星与网关之间的无线能量传输。",
+    "sourceUrl": "https://arxiv.org/abs/2610.30923v1",
+    "sourceTitle": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
+    "pdfUrl": "https://arxiv.org/pdf/2610.30923v1",
+    "sourceImageUrl": "https://arxiv.org/html/2610.30923v1/diagram_new.png",
+    "figure": "Figure 3(a)",
+    "page": 5,
+    "reason": "User-selected SpaceWPT system diagram showing inter-satellite wireless power transfer and the gateway/expert architecture.",
+    "versionNote": "Original unmodified image from the HTML version of arXiv:2610.30923v1; verified against Figure 3(a) on PDF page 5.",
+    "exactPaper": true,
+    "figureName": "SpaceWPT system.",
+    "figureNameZh": "SpaceWPT 系统。",
+    "sourceCaption": "SpaceWPT system.",
+    "parentFigureCaption": "SpaceWPT system and operations.",
+    "figureNameVerified": true
   }
 };

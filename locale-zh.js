@@ -1,6 +1,7 @@
 /* Simplified Chinese profile translations. Publication names and bibliography stay in their original form. */
 window.SITE_ZH = {
   "newsDateOctober": "2026年10月",
+  "newsSpaceWPT": "新预印本：<a href=\"https://arxiv.org/abs/2610.30923\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceWPT</a> 通过星间无线能量传输降低太空数据中心的 MoE 推理时延。",
   "newsSpaceInfrastructure": "新预印本：<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">Space AI Infrastructure: Where the Edge Meets the Orbital Cloud</a>。",
   "personName": "王占伟",
   "footerCopyright": "© 2026 王占伟",

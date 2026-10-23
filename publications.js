@@ -225,6 +225,30 @@ window.PUBLICATIONS = [
     "summarySource": "https://arxiv.org/abs/2501.06726"
   },
   {
+    "id": "p8",
+    "type": "preprint",
+    "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
+    "authors": "Haotian Zheng, Zhanwei Wang*, and Kaibin Huang*",
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "citation": "arXiv:2610.30923, 2026.",
+    "url": "https://arxiv.org/abs/2610.30923",
+    "arxiv": "https://arxiv.org/abs/2610.30923",
+    "topics": [
+      "space",
+      "edge"
+    ],
+    "featured": true,
+    "summary": "SpaceWPT redistributes solar power among satellites through laser-based wireless power transfer and optimizes power control to reduce mixture-of-experts inference latency without changing expert placement or routing.",
+    "status": "preprint",
+    "bibliographicSource": "https://arxiv.org/abs/2610.30923v1",
+    "summarySource": "https://arxiv.org/abs/2610.30923v1",
+    "statusSource": "https://arxiv.org/abs/2610.30923v1",
+    "correspondingAuthorSource": "https://arxiv.org/html/2610.30923v1",
+    "arxivDate": "2026-10-22",
+    "arxivVersion": "v1"
+  },
+  {
     "id": "p7",
     "type": "preprint",
     "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
