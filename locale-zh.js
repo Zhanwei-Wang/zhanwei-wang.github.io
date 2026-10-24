@@ -1,7 +1,7 @@
 /* Simplified Chinese profile translations. Publication names and bibliography stay in their original form. */
 window.SITE_ZH = {
-  "newsSpaceWPT": "新预印本：<a href=\"https://arxiv.org/abs/2610.30923\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceWPT</a> 通过星间无线能量传输降低太空数据中心的 MoE 推理时延。",
-  "newsSpaceInfrastructure": "新预印本：<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">Space AI Infrastructure: Where the Edge Meets the Orbital Cloud</a>。",
+  "newsSpaceWPT": "<a href=\"https://arxiv.org/abs/2610.30923\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceWPT</a> 通过星间无线能量传输降低太空数据中心的 MoE 推理时延。",
+  "newsSpaceInfrastructure": "<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">Space AI Infrastructure: Where the Edge Meets the Orbital Cloud</a>。",
   "personName": "王占伟",
   "footerCopyright": "© 2026 王占伟",
   "pageTitle": "王占伟 | 互联智能",
@@ -61,8 +61,8 @@ window.SITE_ZH = {
   "newsEditorialBadge": "编委任职",
   "newsChinaCommunicationsEditorial": "受聘为<a href=\"https://www.cic-chinacommunications.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">《中国通信》（英文版）</a>第一届青年编委。",
   "newsXduInvitedTalk": "受邀在西安电子科技大学杭州研究院 ICAI 2026 通信工程学院分论坛“泛在智能通信网络技术前沿论坛”作 <a href=\"https://arxiv.org/abs/2605.00515\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceMoE</a> 主题报告。",
-  "newsSpaceDiffusion": "新预印本：<a href=\"https://arxiv.org/abs/2609.20899\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceDiffusion</a> 探索用于太空生成转发通信的在轨扩散技术。",
-  "newsSolarEnergy": "新预印本：<a href=\"https://arxiv.org/abs/2609.01062\" target=\"_blank\" rel=\"noopener noreferrer\">Space Generative AI with Solar Energy Harvesting</a>。",
+  "newsSpaceDiffusion": "<a href=\"https://arxiv.org/abs/2609.20899\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceDiffusion</a> 探索用于太空生成转发通信的在轨扩散技术。",
+  "newsSolarEnergy": "<a href=\"https://arxiv.org/abs/2609.01062\" target=\"_blank\" rel=\"noopener noreferrer\">Space Generative AI with Solar Energy Harvesting</a>。",
   "newsAirMoE": "<a href=\"https://arxiv.org/abs/2608.22932\" target=\"_blank\" rel=\"noopener noreferrer\">AirMoE</a> 探索无线边缘的空中分布式混合专家推理。",
   "newsSpaceMoE": "<a href=\"https://arxiv.org/abs/2605.00515\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceMoE</a>：太空网络中的分布式混合专家推理。",
   "newsAppointment": "我开始在香港大学担任研究助理教授。",
