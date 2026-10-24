@@ -1,5 +1,14 @@
 (() => {
   'use strict';
+  const latestNews = document.querySelector('#news > .news-list');
+  const archivedNews = document.getElementById('news-archive-list');
+  const newsArchive = document.getElementById('news-archive');
+  if (latestNews && archivedNews && newsArchive) {
+    const items = [...latestNews.children, ...archivedNews.children].sort((a, b) => b.querySelector('time').dateTime.localeCompare(a.querySelector('time').dateTime));
+    latestNews.replaceChildren(...items.slice(0, 5));
+    archivedNews.replaceChildren(...items.slice(5));
+    newsArchive.hidden = items.length <= 5;
+  }
   const t = (english, chinese, params = {}) => window.SiteI18n?.t(english, chinese, params) ?? english.replace(/\{(\w+)\}/g, (_, key) => params[key] ?? `{${key}}`);
   const summary = paper => window.SiteI18n?.summary(paper) ?? paper.summary;
   const citation = paper => window.SiteI18n?.citation(paper) ?? paper.citation;

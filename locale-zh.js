@@ -54,6 +54,8 @@ window.SITE_ZH = {
   "researchNoscript": "研究浏览器需要启用 JavaScript。您也可以在<a href=\"#publications\">学术论文</a>中查看我的全部论文。",
   "newsEyebrow": "最新动态",
   "newsHeading": "最新动态",
+  "newsShowOlder": "展开更早动态",
+  "newsHideOlder": "收起更早动态",
   "newsPreprintBadge": "预印本",
   "newsInvitedTalkBadge": "受邀报告",
   "newsEditorialBadge": "编委任职",
