@@ -95,3 +95,45 @@ html[lang=zh-Hans] .about-section [data-i18n=aboutGreeting]{display:none}
 @media(min-width:1280px){
   html[lang=zh-Hans] .about-section p.intro-lead{font-size:1.125rem;letter-spacing:-.02em}
 }
+
+/* Recruitment: a concise invitation followed by practical application details. */
+.about-links{flex-wrap:wrap;row-gap:10px}
+.opportunities-section{border-top:1px solid var(--line);padding-top:26px}
+.opportunities-section .section-heading{margin-bottom:16px}
+.opportunities-roles{font-size:.8125rem;font-weight:600;white-space:nowrap;color:var(--blue);padding-bottom:4px}
+.opportunities-invitation{border-left:3px solid var(--blue);border-radius:0 10px 10px 0;background:var(--surface);padding:18px 26px}
+.opportunities-invitation p{font-size:1rem;line-height:1.7;color:#4f5d72;margin:0 0 9px}
+.opportunities-invitation .opportunities-lead{font-size:1.0625rem;color:var(--ink)}
+.opportunities-invitation .opportunities-potential{margin:0;color:var(--muted)}
+.opportunities-topics{display:flex;flex-wrap:wrap;gap:6px 22px;padding:0;margin:0 0 10px;list-style:none}
+.opportunities-topics li{font-size:.9375rem;font-weight:600;color:var(--blue)}
+.opportunities-details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;margin-top:20px}
+.opportunities-details h3{font-size:1.125rem;margin:0 0 11px}
+.opportunities-details p,.opportunities-details dd{font-size:.9375rem;line-height:1.7;color:#4f5d72}
+.opportunities-details p{margin:0 0 8px}
+.opportunities-admissions dl{margin:0}
+.opportunities-admissions dl>div+div{margin-top:10px}
+.opportunities-admissions dt{font-size:.8125rem;color:var(--muted);margin:0 0 3px}
+.opportunities-admissions dd{margin:0}
+.opportunities-admissions .opportunities-admission-link{margin-top:5px;font-size:.8125rem}
+.opportunities-apply{border-left:1px solid var(--line);padding-left:32px}
+.opportunities-email{display:inline-flex;align-items:center;gap:9px;font-size:.9375rem;font-weight:600;max-width:100%;margin:2px 0 8px}
+.opportunities-email span{overflow-wrap:anywhere}
+.opportunities-email .icon{width:16px;height:16px}
+.opportunities-subject>span{display:block}
+.opportunities-subject>span:first-child{font-size:.8125rem;color:var(--muted);margin-bottom:3px}
+.opportunities-subject>span:last-child{font-size:.8125rem;overflow-wrap:anywhere}
+@media(min-width:561px) and (max-width:1040px){.brand>span:last-child{display:none}.header-contact{display:none}}
+@media(min-width:561px) and (max-width:760px){.site-header nav{overflow-x:auto;scrollbar-width:thin}.site-header nav a{flex:none;padding:7px 8px}}
+@media(max-width:680px){.opportunities-details{grid-template-columns:minmax(0,1fr);gap:18px}.opportunities-apply{border-left:0;border-top:1px solid var(--line);padding:18px 0 0}}
+@media(max-width:560px){
+  .site-header nav{justify-content:flex-start}
+  .opportunities-section{padding-top:22px}
+  .opportunities-section .section-heading{align-items:flex-start;flex-direction:column;gap:9px}
+  .opportunities-roles{padding:0}
+  .opportunities-invitation{padding:16px 18px}
+  .opportunities-invitation p{font-size:.9375rem}
+  .opportunities-invitation .opportunities-lead{font-size:1rem}
+  .opportunities-topics{gap:5px 17px}
+  .opportunities-topics li{font-size:.875rem}
+}
