@@ -225,6 +225,30 @@ window.PUBLICATIONS = [
     "summarySource": "https://arxiv.org/abs/2501.06726"
   },
   {
+    "id": "p9",
+    "type": "preprint",
+    "title": "Satellite Intelligence: Distributed Training, Collaborative Inference, and LLM Adaptation in LEO Constellations",
+    "authors": "Zheng Lin, Zhanwei Wang, Yuxin Zhang, Yafei Wang, Ons Aouedi, Zihan Fang, Jinfeng Xu, Jing Yang, Vu Nguyen Ha, Yuanwei Liu, Mohamed-Slim Alouini, and Symeon Chatzinotas",
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "citation": "arXiv:2610.35282, 2026.",
+    "url": "https://arxiv.org/abs/2610.35282",
+    "arxiv": "https://arxiv.org/abs/2610.35282",
+    "topics": [
+      "space",
+      "edge",
+      "learning"
+    ],
+    "featured": false,
+    "summary": "Surveys constraint-aware satellite intelligence in LEO constellations, covering distributed training, collaborative inference, and on-orbit LLM adaptation and serving under resource, connectivity, and energy constraints.",
+    "status": "preprint",
+    "bibliographicSource": "https://arxiv.org/pdf/2610.35282v1",
+    "summarySource": "https://arxiv.org/abs/2610.35282v1",
+    "statusSource": "https://arxiv.org/abs/2610.35282v1",
+    "arxivDate": "2026-10-26",
+    "arxivVersion": "v1"
+  },
+  {
     "id": "p8",
     "type": "preprint",
     "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",

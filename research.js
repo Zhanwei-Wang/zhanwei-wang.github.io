@@ -8,9 +8,9 @@
   const section = document.getElementById('research');
   if (!section || !Array.isArray(window.PUBLICATIONS)) return;
   const themes = {
-    space: { number: '01', label: 'Space AI', labelZh: '太空人工智能', headingZh: '让智能走向太空', descriptionZh: '卫星网络中的分布式基础模型推理', subtitle: 'Foundation Models in Space Networks', subtitleZh: '太空网络中的基础模型', heading: 'Bringing intelligence into orbit', description: 'Distributed foundation-model inference across satellite networks', papers: ['p8', 'p7', 'p1', 'p3', 'p5', 'j6'] },
-    edge: { number: '02', label: 'Edge Inference', labelZh: '边缘推理', headingZh: '可靠的边缘推理', descriptionZh: '协同设计感知、通信与计算，在无线边缘实现低时延感知、分类与生成式 AI 推理。', subtitle: 'Distributed LLM Inference and Sensing', subtitleZh: '分布式大语言模型推理与感知', heading: 'Reliable inference at the edge', description: 'Joint sensing, communication, and computation for low-latency perception, classification, and generative AI inference at the wireless edge.', papers: ['j2', 'j3', 'j1', 'p2', 'p4', 'p6', 'j7', 'j11', 'j6', 'p1', 'p3', 'p5', 'p7', 'p8'] },
-    learning: { number: '03', label: 'Edge Learning', labelZh: '边缘学习', headingZh: '无线设备协同学习', descriptionZh: '面向无线设备的联邦与分布式训练，联合优化模型更新、通信效率与学习收敛。', subtitle: 'Distributed AI model training', subtitleZh: '分布式 AI 模型训练', heading: 'Learning across wireless devices', description: 'Federated and distributed training across wireless devices, jointly optimizing model updates, communication efficiency, and learning convergence.', papers: ['j4', 'j5', 'j6', 'j11'] },
+    space: { number: '01', label: 'Space AI', labelZh: '太空人工智能', headingZh: '让智能走向太空', descriptionZh: '卫星网络中的分布式基础模型推理', subtitle: 'Foundation Models in Space Networks', subtitleZh: '太空网络中的基础模型', heading: 'Bringing intelligence into orbit', description: 'Distributed foundation-model inference across satellite networks', papers: ['p9', 'p8', 'p7', 'p1', 'p3', 'p5', 'j6'] },
+    edge: { number: '02', label: 'Edge Inference', labelZh: '边缘推理', headingZh: '可靠的边缘推理', descriptionZh: '协同设计感知、通信与计算，在无线边缘实现低时延感知、分类与生成式 AI 推理。', subtitle: 'Distributed LLM Inference and Sensing', subtitleZh: '分布式大语言模型推理与感知', heading: 'Reliable inference at the edge', description: 'Joint sensing, communication, and computation for low-latency perception, classification, and generative AI inference at the wireless edge.', papers: ['j2', 'j3', 'j1', 'p2', 'p4', 'p6', 'j7', 'j11', 'j6', 'p1', 'p3', 'p5', 'p7', 'p8', 'p9'] },
+    learning: { number: '03', label: 'Edge Learning', labelZh: '边缘学习', headingZh: '无线设备协同学习', descriptionZh: '面向无线设备的联邦与分布式训练，联合优化模型更新、通信效率与学习收敛。', subtitle: 'Distributed AI model training', subtitleZh: '分布式 AI 模型训练', heading: 'Learning across wireless devices', description: 'Federated and distributed training across wireless devices, jointly optimizing model updates, communication efficiency, and learning convergence.', papers: ['p9', 'j4', 'j5', 'j6', 'j11'] },
     quantum: { number: '04', label: 'Quantum Receivers', labelZh: '量子接收机', headingZh: '探索原子尺度的无线技术', descriptionZh: '面向多频段通信与高灵敏度无线感知的里德堡原子接收机。', subtitle: 'Wireless at the atomic scale', subtitleZh: '原子尺度的无线技术', heading: 'Exploring wireless at the atomic scale', description: 'Rydberg atomic receivers for multi-band communication and sensitive wireless sensing.', papers: ['j8', 'j10'] }
   };
   const titleSummaries = {
@@ -39,7 +39,7 @@
   const topicButtons = [...section.querySelectorAll('[data-research-topic]')];
   const rail = section.querySelector('#research-paper-rail');
   let currentTheme = 'space';
-  let selectedPaper = 'p8';
+  let selectedPaper = 'p9';
   const setText = (id, value) => { section.querySelector(`#${id}`).textContent = value; };
   const shortVenue = paper => {
     if (paper.type === 'preprint') return 'arXiv';

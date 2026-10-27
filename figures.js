@@ -410,5 +410,27 @@ window.PAPER_FIGURES = {
     "sourceCaption": "SpaceWPT system.",
     "parentFigureCaption": "SpaceWPT system and operations.",
     "figureNameVerified": true
+  },
+  "p9": {
+    "asset": "assets/papers/p9-overview.jpg",
+    "width": 2580,
+    "height": 1229,
+    "caption": "Deployment challenges of SI and the corresponding design principles.",
+    "alt": "Three panels link rigid onboard resource limits, dynamic orbital topologies, and intermittent energy supply to resource-aware task decoupling, topology-resilient orchestration, and energy-aware scheduling.",
+    "captionZh": "卫星智能的部署挑战与相应设计原则。",
+    "altZh": "三幅示意图将星载资源限制、动态轨道拓扑及间歇性能源供应，分别对应到资源感知任务解耦、拓扑韧性编排与能量感知调度。",
+    "sourceUrl": "https://arxiv.org/abs/2610.35282v1",
+    "sourceTitle": "Satellite Intelligence: Distributed Training, Collaborative Inference, and LLM Adaptation in LEO Constellations",
+    "pdfUrl": "https://arxiv.org/pdf/2610.35282v1",
+    "sourceImageUrl": "https://arxiv.org/html/2610.35282v1/SI_challenge_priciple.jpg",
+    "figure": "Figure 2",
+    "page": 4,
+    "reason": "Overview of the survey’s orbital constraints and design principles.",
+    "versionNote": "Original image from the HTML version of arXiv:2610.35282v1; caption and page verified in the PDF.",
+    "exactPaper": true,
+    "figureName": "Deployment challenges of SI and the corresponding design principles.",
+    "figureNameZh": "卫星智能的部署挑战与相应设计原则。",
+    "sourceCaption": "Deployment challenges of SI and the corresponding design principles.",
+    "figureNameVerified": true
   }
 };

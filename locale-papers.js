@@ -1,5 +1,10 @@
 /* Chinese summaries and figure descriptions. Paper titles, authors, and publication venues stay in their original language. */
 window.PAPER_ZH = {
+  p9: {
+      "summary": "综述低轨星座中面向资源、连接与能源约束的卫星智能，涵盖分布式训练、协同推理，以及在轨大语言模型适配与服务。",
+      "figureCaption": "卫星智能的部署挑战与相应设计原则。",
+      "figureAlt": "三幅示意图将星载资源限制、动态轨道拓扑及间歇性能源供应，分别对应到资源感知任务解耦、拓扑韧性编排与能量感知调度。"
+  },
   j1: {
     summary: '在固定带宽内，结合特征压缩与扩频技术，保护分布式感知免受干扰。',
     figureCaption: '存在干扰时的多视角感知与空中特征融合。',

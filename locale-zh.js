@@ -1,5 +1,6 @@
 /* Simplified Chinese profile translations. Publication names and bibliography stay in their original form. */
 window.SITE_ZH = {
+  "newsSatelliteIntelligence": "我们的<a href=\"https://arxiv.org/abs/2610.35282\" target=\"_blank\" rel=\"noopener noreferrer\">卫星智能</a>综述预印本系统梳理了低轨星座中的分布式训练、协同推理与大语言模型适配。",
   "opportunitiesSpaceComputing": "太空计算与 AI 基础设施",
   "opportunitiesEdgeIntelligence": "边缘智能",
   "opportunitiesWirelessCommunication": "无线通信",
