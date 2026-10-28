@@ -25,7 +25,7 @@ window.SITE_ZH = {
   "opportunitiesSubjectLabel": "邮件标题",
   "opportunitiesSubject": "[MPhil / PhD] Application – 学校 – 姓名",
   "newsSpaceWPT": "<a href=\"https://arxiv.org/abs/2610.30923\" target=\"_blank\" rel=\"noopener noreferrer\">SpaceWPT</a> 通过星间无线能量传输降低太空数据中心的 MoE 推理时延。",
-  "newsSpaceInfrastructure": "<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">Space AI Infrastructure: Where the Edge Meets the Orbital Cloud</a>。",
+  "newsSpaceInfrastructure": "我们从卫星星座的视角，构想了面向<a href=\"https://arxiv.org/abs/2610.16395\" target=\"_blank\" rel=\"noopener noreferrer\">太空 AI 基础设施</a>的边缘—云架构。",
   "personName": "王占伟",
   "footerCopyright": "© 2026 王占伟",
   "pageTitle": "王占伟 | 互联智能",
